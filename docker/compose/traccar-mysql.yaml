@@ -43,6 +43,7 @@ services:
       - "5000-5500:5000-5500"
     volumes:
       - /opt/traccar/logs:/opt/traccar/logs
+      - ../../setup/traccar.xml:/opt/traccar/conf/traccar.xml:ro
 
   autoheal:
     image: willfarrell/autoheal:latest
